@@ -16,6 +16,15 @@ function checkIdProject(req, res, next) {
   return next()
 }
 
+let totalRequest = 0;
+function LogtotalRequest(req, res, next) {
+  totalRequest++
+  console.log(`Total de requsições: ${totalRequest}`)
+  next()
+}
+
+server.use(LogtotalRequest)
+
 const projects = [
   {
     id: 1,
