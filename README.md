@@ -48,6 +48,7 @@ yarn dev
 
 **Rodas da aplicação**
 
+```
 Listar todos projetos
 GET - '/projects'
 
@@ -56,7 +57,6 @@ GET - '/projects/1'
 
 Cadastra projeto
 POST - '/projects'
-
 request: { "id": 2, "title": "título do projeto" } (json)
 
 atualizar um projeto
@@ -68,10 +68,10 @@ deleta um projeto
 param int id - Id do projeto
 DELETE - '/projects/:id'
 
-
 **Tarefas**
 Lista todas as tarefas de um projeto
 GET - '/projects/:id/tasks'
 
 Cadastra tarefa para um projeto
 POST - '/projects/:id/tasks'
+```
