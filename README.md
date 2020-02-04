@@ -2,7 +2,7 @@
   <img src="https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/bootcamp-header.png" alt="gostack" width="200">
 </p>
 
-# Bootcamp GoStack - Módulo 01 / Desafio 01
+Bootcamp GoStack - Módulo 01 / Desafio 01
 
 Aplicação para armazenar projetos e suas tarefas.
 
@@ -18,7 +18,7 @@ OBS: Por se tratar de um projeto com finalidade de aplicar conhecimentos sobre A
 
 <p> Foram abordados conceitos de rotas, CRUD, middleware, desestruturação, filtros e mais...</p>
 
-## Inicio
+#### Inicio
 
 #### Instalar as dependências:
 
@@ -44,34 +44,34 @@ ou
 yarn dev
 ```
 
-### Endereço
-**http://localhost:3000**
+#### Endereço: **http://localhost:3000**
 
-Rodas da aplicação
+**Rodas da aplicação**
 
-# listar todos projetos
+Listar todos projetos
 GET - '/projects'
 
-# exibi um projeto
+Exibi um projeto
 GET - '/projects/1'
 
-# cadastra projeto
+Cadastra projeto
 POST - '/projects'
-# request: { "id": 2, "title": "título do projeto" } (json)
 
-# atualizar um projeto
-# param int id - Id do projeto
+request: { "id": 2, "title": "título do projeto" } (json)
+
+atualizar um projeto
+param int id - Id do projeto
 PUT - '/projects/:id'
-# corpo da requisição: { title: "título do projeto" } (json)
+corpo da requisição: { title: "título do projeto" } (json)
 
-# deleta um projeto
-# param int id - Id do projeto
+deleta um projeto
+param int id - Id do projeto
 DELETE - '/projects/:id'
 
 
-# Tarefas
-# lista todas as tarefas de um projeto
+**Tarefas**
+Lista todas as tarefas de um projeto
 GET - '/projects/:id/tasks'
 
-# cadastra tarefa para um projeto
+Cadastra tarefa para um projeto
 POST - '/projects/:id/tasks'
